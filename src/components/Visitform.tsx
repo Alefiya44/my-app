@@ -6,32 +6,23 @@ export default function VisitForm() {
                 <p className="form-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
                 <div className="form-grid">
-                    <div className="form-group">
-                        <label>Name</label>
-                        <input
-                            type="text"
-                            placeholder=""
-                        />
+                    <div className="form-field">
+                        <label className="field-label">Name</label>
+                        <input type="text" placeholder="" />
                     </div>
 
-                    <div className="form-group">
-                        <label>Email</label>
-                        <input
-                            type="email"
-                            placeholder=""
-                        />
+                    <div className="form-field">
+                        <label className="field-label">Email</label>
+                        <input type="email" placeholder="" />
                     </div>
 
-                    <div className="form-group">
-                        <label>Mobile</label>
-                        <input
-                            type="text"
-                            placeholder=""
-                        />
+                    <div className="form-field">
+                        <label className="field-label">Mobile</label>
+                        <input type="text" placeholder="" />
                     </div>
 
-                    <div className="form-group">
-                        <label>Select city</label>
+                    <div className="form-field">
+                        <label className="field-label">Select city</label>
                         <select defaultValue="">
                             <option value="" disabled>Select city</option>
                             <option value="mumbai">Mumbai</option>
@@ -40,9 +31,17 @@ export default function VisitForm() {
                         </select>
                     </div>
 
-                    <button type="submit" className="form-btn">
-                        Request
-                    </button>
+                    <div className="form-field form-btn-wrapper">
+                        <label className="field-label">&nbsp;</label>
+                        <button type="submit" className="request-btn">
+                            <img
+                                src="/searchnormal1.png"
+                                alt="submit"
+                               style={{fontFamily:'Inter' , height: '20px', width: '20px' }} 
+                            />
+                            Request
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
