@@ -3,32 +3,44 @@ export default function VisitForm() {
         <div className="visit-form-container">
             <div className="visit-form">
                 <h2>Request for a visit</h2>
-                <p className="form-subtitle">Fill the Form</p>
+                <p className="form-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
                 <div className="form-grid">
-                    <input
-                        type="text"
-                        placeholder="Name"
-                    />
+                    <div className="form-group">
+                        <label>Name</label>
+                        <input
+                            type="text"
+                            placeholder=""
+                        />
+                    </div>
 
-                    <input
-                        type="email"
-                        placeholder="Email"
-                    />
+                    <div className="form-group">
+                        <label>Email</label>
+                        <input
+                            type="email"
+                            placeholder=""
+                        />
+                    </div>
 
-                    <input
-                        type="text"
-                        placeholder="Mobile"
-                    />
+                    <div className="form-group">
+                        <label>Mobile</label>
+                        <input
+                            type="text"
+                            placeholder=""
+                        />
+                    </div>
 
-                    <select defaultValue="Select City">
-                        <option value="Select City" disabled>Select City</option>
-                        <option value="mumbai">Mumbai</option>
-                        <option value="pune">Pune</option>
-                        <option value="bangalore">Bangalore</option>
-                    </select>
+                    <div className="form-group">
+                        <label>Select city</label>
+                        <select defaultValue="">
+                            <option value="" disabled>Select city</option>
+                            <option value="mumbai">Mumbai</option>
+                            <option value="pune">Pune</option>
+                            <option value="bangalore">Bangalore</option>
+                        </select>
+                    </div>
 
-                    <button type="submit">
+                    <button type="submit" className="form-btn">
                         Request
                     </button>
                 </div>

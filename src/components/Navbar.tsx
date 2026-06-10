@@ -16,12 +16,29 @@ export default function Navbar() {
 
                 <div className="utility-right">
                     <div className="utility-icons">
-                        <span>🌐</span>
-                        <span>📄</span>
+                    <img
+                        src="/facebook.jpg"
+                        alt="Facebook Icon"
+                        style={{ height: '20px' }}
+                    />
+           
+                        <span>
+                            <img
+                        src="/instagram.png"
+                        alt="Instagram Icon"
+                        style={{ height: '20px' }}
+                    />
+                        </span>
                     </div>
-                    <div className="top-search-box">
-                        <span>🔍</span>
-                        <input type="text" placeholder="Search" />
+                    <div className="utility-right">
+                        <span>
+                            <img
+                        src="/play.png"
+                        alt="Search Icon"
+                        style={{ height: '20px' }}
+                    />
+                        </span>
+
                     </div>
                 </div>
             </div>
@@ -32,7 +49,7 @@ export default function Navbar() {
                     <img
                         src="/CoKarma_logo1 2.png"
                         alt="CoKarma Logo"
-                        style={{ height: '50px' }}
+                        style={{ height: '90px' }}
                     />
                 </div>
 
@@ -46,12 +63,13 @@ export default function Navbar() {
                 </ul>
 
                 <button className="login-btn">
-                    <span>Login / Signup</span>
+                   
                     <img
                         src="/Group.png"
                         alt="icon"
                         style={{ width: '16px', height: '16px' }}
                     />
+                     <span>Login / Signup</span>
                 </button>
             </nav>
         </header>

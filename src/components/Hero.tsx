@@ -9,16 +9,25 @@ export default function Hero() {
 
             {/* PHASE 5: HERO CONTENT SECTION */}
             <section className="hero">
-                <div className="overlay">
-                    <h1>
-                        HELLO, WELCOME TO <span>CoKarma</span>
-                    </h1>
+                <div className="hero-container">
+                    <button className="nav-arrow left-arrow">←</button>
+                    <div className="overlay">
+                        <h1>
+                            Lorem ipsum dolor sitamet <br /> consectetur adipisicing elit
+                        </h1>
 
-                    <p>Home</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollit,<br />
+                            molestiae quas vel sint commodi repudiandae consequuntur<br />
+                            voluptatum laborum numquam blanditiis harum quisquam<br />
+                            cius sed odit fugiat iustofuga praesentiun optio, eaque rerum!
+                        </p>
 
-                    <button className="hero-btn">
-                        View More
-                    </button>
+                        <button className="hero-btn">
+                            View More
+                        </button>
+                    </div>
+                    <button className="nav-arrow right-arrow">→</button>
                 </div>
             </section>
         </>
