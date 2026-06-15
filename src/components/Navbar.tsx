@@ -43,7 +43,7 @@ export default function Navbar() {
       <div className="w-full bg-[#F7F1EB] shadow-md">
         <div className="max-w-8xl mx-15  relative bg-[#F7F1EB] ">
           {/* Top Navigation */}
-          <div className="flex pt-6 bg-[#F7F1EB]">
+          <div className="flex pt-7 bg-[#F7F1EB]">
             {/* Logo - floating rounded card, inset to align with content gutter */}
             <div className="bg-white rounded-t-[12px]  z-20 relative flex-none flex items-center justify-center px-3">
               <img
