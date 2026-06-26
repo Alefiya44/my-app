@@ -2,59 +2,60 @@ import React from "react";
 
 export default function Hero() {
   return (
-    /* 1. This outer section aligns the whole container with your Navbar limits */
-    <section className="w-full bg-white ">
-      <div className="max-w-8xl mx-15 ">
-        <div className="relative w-full min-h-[480px] md:h-[520px] overflow-hidden shadow-md flex items-center justify-between px-[3%]">
-          {/* Background Hero Image - Must have absolute inset-0 to fill the frame */}
+    <section className="container mx-auto px-4 lg:px-8">
+      <div className="relative flex items-center justify-between min-h-[500px] overflow-hidden shadow-lg">
+
+        {/* Background Image */}
+        <img
+          src="/hello.png.png"
+          alt="Coworking Space"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/40" />
+
+        {/* Left Arrow */}
+        <button className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white/80 shadow-md transition hover:scale-105 hover:bg-white">
           <img
-            src="/hello.png.png"
-            alt="Coworking Space Background"
-            className="absolute inset-0 w-full h-full object-cover z-[1]"
+            src="/arrowleft.png"
+            alt="Previous"
+            className="h-4 w-4"
           />
+        </button>
 
-          {/* Dark Overlay to pop text readability */}
-          <div className="absolute inset-0 bg-black/40 z-[2]" />
+        {/* Content */}
+        <div className="absolute inset-0 z-10 flex items-center justify-center px-6 md:justify-end lg:pr-20">
+          <div className="max-w-xl text-center md:text-left">
 
-          {/* Left Navigation Arrow */}
-          <button className="relative z-[10] bg-white/80 w-[50px] h-[50px] rounded-full flex items-center justify-center shrink-0 shadow-md hover:bg-white hover:scale-[1.08] transition-all duration-200 border-none cursor-pointer">
-            <img
-              src="/arrowleft.png"
-              alt="previous"
-              className="w-[18px] h-[18px]"
-            />
-          </button>
+            <h1 className="mb-4 text-3xl font-bold leading-tight text-white md:text-5xl">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit
+            </h1>
 
-          {/* Center/Right Text Block Content Layout */}
-          <div className="absolute inset-0 flex justify-center md:justify-end items-center px-6 md:pr-[8%] z-[3] pointer-events-none">
-            <div className="max-w-full md:max-w-[520px] pointer-events-auto text-center md:text-left">
-              <h1 className="text-white text-[32px] md:text-[42px] font-bold leading-[1.2] mb-4">
-                Lorem ipsum dolor sit amet <br className="hidden md:inline" />{" "}
-                consectetur adipisicing elit
-              </h1>
-              {/* FIXED: Formatted text color hex representation to standard uppercase 6-digit #DDDDDD */}
-              <p className="text-[#DDDDDD] text-[13px] md:text-[14px] tracking-[0.3px] leading-[1.6] mb-6">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                mollitia, molestiae quas vel sint commodi repudiandae
-                consequuntur voluptatum laborum numquam blanditiis harum
-                quisquam eius sed odit fugiat iusto fuga praesentium optio,
-                eaque rerum!
-              </p>
-              <button className="bg-gradient-to-r from-[#CF173C] to-[#1E1E1E] text-white py-3 px-8 text-[14px] font-semibold rounded-[4px] shadow-lg hover:opacity-90 transition-opacity duration-200 border-none cursor-pointer">
-                View More
-              </button>
-            </div>
+            <p className="mb-6 text-sm leading-relaxed text-gray-200 md:text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Maxime mollitia, molestiae quas vel sint commodi repudiandae
+              consequuntur voluptatum laborum numquam blanditiis harum
+              quisquam eius sed odit fugiat iusto fuga praesentium optio,
+              eaque rerum!
+            </p>
+
+            <button className="rounded bg-gradient-to-r from-[#CF173C] to-[#1E1E1E] px-8 py-3 font-semibold text-white shadow-lg transition hover:opacity-90">
+              View More
+            </button>
+
           </div>
-
-          {/* Right Navigation Arrow */}
-          <button className="relative z-[10] bg-white/80 w-[50px] h-[50px] rounded-full flex items-center justify-center shrink-0 shadow-md hover:bg-white hover:scale-[1.08] transition-all duration-200 border-none cursor-pointer">
-            <img
-              src="/arrowright.png"
-              alt="next"
-              className="w-[18px] h-[18px]"
-            />
-          </button>
         </div>
+
+        {/* Right Arrow */}
+        <button className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white/80 shadow-md transition hover:scale-105 hover:bg-white">
+          <img
+            src="/arrowright.png"
+            alt="Next"
+            className="h-4 w-4"
+          />
+        </button>
+
       </div>
     </section>
   );
